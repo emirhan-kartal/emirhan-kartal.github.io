@@ -1,0 +1,41 @@
+h1 {
+    font-family: newFont;
+    font-size: 48px;
+}
+
+.container {
+    display: flex;
+    padding: 5rem 3.3rem 0 3.3rem;
+
+    height: 90vh;
+    width: auto;
+    flex-direction: column;
+
+}
+
+.buttonSub {
+    width: 100%;
+    background-color: black;
+    margin-top: auto;
+    
+}
+.container img {
+    display: flex;
+    align-self:flex-start;
+}
+
+@media only screen and (min-width:800px) {
+    body {
+
+
+        background-color: #36384d;
+    }
+    .container {
+        padding-bottom:3rem;
+        padding-top:3rem;
+        width: 20vw;
+        height: 50vh;
+        background-color: white;
+    }
+
+}
