@@ -3,7 +3,7 @@
     .container {
         padding: 5rem;
         grid-template-rows: 5rem 25rem repeat(3,auto);
-        grid-template-columns: 25rem 10rem;
+        grid-template-columns: 1fr 1fr 1fr 0.7fr 0.7fr;
         grid-template-areas: "logo . menu menu menu"
                              "pic pic pic nw nw"
                              "txt txt txt nw nw"
