@@ -1,0 +1,70 @@
+@media screen and (min-width: 1000px) {
+
+    .container {
+        padding: 5rem;
+        grid-template-rows: 5rem 25rem repeat(3,auto);
+        grid-template-columns: 25rem 10rem;
+        grid-template-areas: "logo . menu menu menu"
+                             "pic pic pic nw nw"
+                             "txt txt txt nw nw"
+                             "nw2 nw2 nw2 nw2 nw2";
+        justify-content: space-around;
+    }
+    .textPlace {
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+    .textPlace h1 {
+        margin:0;
+        font-size: 2.5rem;
+        justify-items: center;
+    }
+    .textPlace button {
+        width: 35%;
+        justify-self:end;
+    }
+    
+    .pic,.textPlace {
+        margin-right: 1rem;
+    }
+
+    .pic {
+        background-image: url("../assets/image-web-3-desktop.jpg");
+        background-size: cover;
+    }
+    
+    .textContent button{
+        align-self: end;
+    }
+    .picturedNews {
+        grid-template-columns: repeat(6,auto);
+    }
+    .picturedNews .picturedLabel {
+        margin:0;
+    }
+    .picturedNews .picture {
+        margin-right: 1rem;
+    }
+    .menu{
+        display: none;
+    }
+    .sidenav {
+        display: grid;
+        overflow-x:visible;
+        position:relative;
+        justify-self: end;
+        padding: 0;
+        grid-area:menu;
+        width: auto;
+        grid-template-columns: repeat(6,auto);
+    }
+    .sidenav a {
+        padding: 0.5rem;
+    }
+    .sidenav .closebtn {
+        display: none;
+    }
+}

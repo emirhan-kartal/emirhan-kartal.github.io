@@ -1,0 +1,150 @@
+html {
+    position: relative;
+}
+
+body {
+    font-family: myFirstFont;
+    margin: 0;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../assets/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    padding: 1rem;
+    position: absolute;
+    grid-template-rows: 50px 400px auto auto auto;
+    grid-template-areas: "logo . . menu"
+        "pic pic pic pic"
+        "txt txt txt txt"
+        "nw nw nw nw"
+        "nw2 nw2 nw2 nw2";
+}
+
+
+
+.logo {
+
+    background-image: url(../assets/logo.svg);
+    background-size: cover;
+    grid-area: logo;
+    width: 50px;
+    height: 30px;
+
+}
+
+.menu {
+    background-image: url(../assets/icon-menu.svg);
+    background-size: cover;
+    grid-area: menu;
+    width: 50px;
+    justify-self: end;
+    height: 30px;
+    cursor: pointer;
+}
+
+.pic {
+    background-image: url(../assets/image-web-3-mobile.jpg);
+    grid-area: pic;
+}
+
+.textPlace {
+    grid-area: txt;
+    display: grid;
+    grid-template-rows: 0.9fr 1fr 0.8fr;
+    font-size: 1.1rem;
+
+
+}
+
+.textPlace button {
+    width: 50%;
+    height: 3rem;
+    background-color: #F15D4F;
+    font-family: myFirstFont;
+    color: white;
+    border: 0;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+}
+
+.textPlace h1 {
+    margin-top: 1rem;
+}
+
+.textPlace .textContent {
+    color: gray;
+    line-height: 1.8rem;
+}
+
+.news {
+    display: grid;
+    padding: 0.5rem;
+    grid-area: nw;
+    grid-template-rows: 100px auto auto auto;
+    background-color: #00001A;
+}
+.news h1 {
+    margin-bottom: 0;
+    color:#E4A850;
+}
+.news .textContent {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.news h3 {
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+.newsLabel {
+    color: lightgray;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.picturedNews {
+    grid-area:nw2;
+    display: grid;
+    margin-top: 3.5rem;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100px auto;
+}
+
+.picturedNews .picture {
+    height: 125px;
+    width: 100px;
+    margin: auto auto 1.5rem auto;
+    
+}
+.picturedNews .picture1 {
+    background: url(../assets/image-retro-pcs.jpg);
+    background-size: cover;
+
+}
+.picturedNews .picture2 {
+    background: url(../assets/image-top-laptops.jpg);
+    background-size: cover;
+
+}
+.picturedNews .picture3 {
+    background: url(../assets/image-gaming-growth.jpg);
+    background-size: cover;
+}
+.picturedNews h2 {
+    margin: 0 0 0.5rem 0;
+    color:rgb(169, 167, 167);
+}
+
+.picturedNews .picturedLabel {
+    margin-left:1rem
+}
+.picturedNews .labelTitle {
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
