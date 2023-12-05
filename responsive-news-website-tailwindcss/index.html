@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/output.css">
+</head>
+
+<body class="h-screen w-full">
+    <div id="container" class="h-screen w-screen grid grid-rows-[50px_400px_auto_auto_auto]
+         grid-cols-4 justify-items-center p-4 gap-8
+         lg:grid-rows-[50px_minmax(400px,500px)_minmax(200px,350px)_minmax(200px,350px)]
+         lg:grid-cols-6
+         lg:p-24">
+
+        <div id="logo-icon" class="bg-[url('../news-homepage/assets/logo.svg')]
+         bg-cover
+             w-[50px] h-[30px] justify-self-start lg:row-start-1 lg:row-end-2 lg:col-start-1 lg:col-end-2">
+        </div>
+        <div id="latest-article-pic" class="bg-[url('../news-homepage/assets/image-mobile.jpg')]
+         bg-cover
+             w-full h-auto col-start-1 col-end-5 lg:col-start-1 lg:col-end-5 lg:row-start-2 lg:row-end-3">
+        </div>
+
+
+        <div id="menu-icon" class="bg-[url('../news-homepage/assets/icon-menu.svg')]
+         bg-cover 
+            w-[50px] h-[30px] row-start-1 row-end-2 col-start-4 col-end-5 
+            justify-self-end lg:hidden cursor-pointer" onclick="openNav()">
+        </div>
+
+        <div id="sidebar" class="h-full w-0 fixed z-10 top-0 right-0 bg-black overflow-x-hidden transition-all 
+            duration-500 flex flex-col lg:row-start-1 lg:row-end-2 lg:col-start-5 lg:col-end-7
+            ">
+            <a href="javascript:void(0)" class="closebtn text-gray-500 p-2 pb-6 no-underline block 
+                top-0 left-12 ml-[200px] " onclick="closeMenu()"><i class="fa-solid fa-xmark fa-2xl"></i></a>
+
+            <div id="forwarders" class="mt-12">
+                <a href="#"
+                    class="closebtn text-gray-500 p-2 pl-8 text-2xl no-underline block
+                    lg:block 
+                    
+                    hover:text-white">Anasayfa</a>
+                <a href="#"
+                    class="closebtn text-gray-500 p-2 pl-8 text-2xl no-underline block hover:text-white">Makaleler</a>
+            </div>
+        </div>
+        <div id="desktop-forwarders" class="hidden row-end-2 col-start-5 col-end-7 flex flex-row lg:block">
+            <a href="#"
+                    class="closebtn text-gray-500 p-2 pl-8 text-2xl no-underline 
+                    
+                    hover:text-black">Anasayfa</a>
+                <a href="#"
+                    class="closebtn text-gray-500 p-2 pl-8 text-2xl no-underline hover:text-black">Makaleler</a>
+           
+        </div>
+        <div class=" w-full h-auto row-start-3 row-end-4 col-start-1 col-end-5 lg:grid lg:grid-cols-2">
+            <h1 class="text-6xl font-bold flex justify-center content-center">The Bright Future of Web 3.0?</h1>
+            <div class="flex flex-col">
+                <p class="text-lg mt-2 text-gray-500">We dive into the next
+                    evolution of the web
+                    that claims to put the power of the
+                    platforms back into the hands of the people.
+                    But is it really fulfilling its promise?</p>
+                <div id="read-more" class="w-1/2 h-12 bg-[#F15D4F] text-white
+                 flex items-center justify-center tracking-widest justify-self-end mt-8 hover:bg-orange-600">Devamını
+                    Oku</div>
+
+            </div>
+        </div>
+        <div id="label-news-wrapper" class="w-auto h-auto row-start-4 row-end-5
+         col-start-1 col-end-5 lg:row-start-2 lg:row-end-4 lg:col-start-5 lg:col-end-7 lg:h-full">
+            <div id="label-news" class="h-full bg-[#00001A] grid gap-8 p-4 lg:gap-0">
+                <div id="label-news-title" class="text-3xl text-yellow-700 font-bold"> NEWS</div>
+
+                <!-- LABEL-NEW-WRAPPERS-->
+
+                <div class="grid gap-4 lg:gap-0">
+                    <div class="text-2xl font-bold text-white">Hydrogen VS Electric Cars</div>
+                    <div class="text-white">Will hydrogen-fueled cars ever catch up to EVs</div>
+                </div>
+
+                <div class="h-px w-auto bg-gray-500"></div> <!--Horizontal Line-->
+
+                <div class="grid gap-4 lg:gap-0">
+                    <div class="text-2xl font-bold text-white">Hydrogen VS Electric Cars</div>
+                    <div class="text-white">Will hydrogen-fueled cars ever catch up to EVs</div>
+                </div>
+
+                <div class="h-px w-auto bg-gray-500"></div> <!--Horizontal Line-->
+
+                <div class="grid gap-4 lg:gap-0">
+                    <div class="text-2xl font-bold text-white">Hydrogen VS Electric Cars</div>
+                    <div class="text-white">Will hydrogen-fueled cars ever catch up to EVs</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pictured-news-wrapper" class="w-full row-start-5 row-end-6
+         col-start-1 col-end-5 lg:col-start-1 lg:col-end-7 lg:row-start-4 lg:row-end-5">
+            <div id="pictured-news" class="grid grid-rows-3 gap-8 pb-8 lg:grid-rows-1 lg:grid-cols-3">
+
+                <div class="grid grid-cols-[100px_auto] h-[100px] gap-x-3 gap-y-1 lg:gap-0">
+                    <div class="bg-[url('../news-homepage/assets/img1.jpg')] h-[150px] bg-cover"></div>
+                    <div class="flex flex-col">
+                        <div class="text-4xl text-gray-300 font-bold">01</div>
+                        <div class="text-2xl text-black font-bold">Reviving Retro PCs</div>
+                        <div class="text-gray-500"> What will happen when old PCs are given
+                            modern upgrades?</div>
+                    </div>
+
+                </div>
+                <div class="grid grid-cols-[100px_auto] h-auto gap-x-3 gap-y-1">
+                    <div class="bg-[url('../news-homepage/assets/img2.jpg')] h-[150px] bg-cover"></div>
+                    <div class="flex flex-col">
+                        <div class="text-4xl text-gray-300 font-bold">02</div>
+                        <div class="text-2xl text-black font-bold">Reviving Retro PCs</div>
+                        <div class="text-gray-500"> What will happen when old PCs are given
+                            modern upgrades?</div>
+                    </div>
+
+                </div>
+                <div class="grid grid-cols-[100px_auto] h-auto gap-x-3 gap-y-1">
+                    <div class="bg-[url('../news-homepage/assets/img3.jpg')] h-[150px] bg-cover"></div>
+                    <div class="flex flex-col">
+                        <div class="text-4xl text-gray-300 font-bold">03</div>
+                        <div class="text-2xl text-black font-bold">Reviving Retro PCs</div>
+                        <div class="text-gray-500"> What will happen when old PCs are given
+                            modern upgrades?</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/side-menu.js"></script>
+<script src="https://kit.fontawesome.com/e868592919.js" crossorigin="anonymous"></script>
+
+</html>

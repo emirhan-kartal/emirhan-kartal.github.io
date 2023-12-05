@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.selected {
+    @apply bg-blue-300;
+}
+
+.service-container {
+    @apply grid grid-cols-2;
+}
+
+.service-name {
+    @apply text-gray-400;
+}
+
+.service-price {
+    @apply justify-self-end text-dif-blue font-semibold;
+
+}
+
+.price-tag-monthly {
+    @apply text-gray-400;
+}
+.price-tag-yearly {
+    @apply text-dif-blue;
+}
+
+.emka-checkbox-t3:checked + .emka-container-t3 {
+    border-color: black;
+    background-color: aqua;
+}
+
+.container-class {
+    @apply flex flex-col h-full;
+
+}
