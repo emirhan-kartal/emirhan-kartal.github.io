@@ -1,23 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Emirhan Kartal Projects</title>
+    </head>
+    <body>
+        <h1>My Projects</h1>
+    </body>
+    <script>
+        function txtToElem(txt) {
+            return new DOMParser().parseFromString(txt, "text/html");
+        }
+        let test = new XMLHttpRequest();
+        test.open(
+            "GET",
+            "https://github.com/emirhan-kartal/emirhan-kartal.github.io",
+            true
+        );
+        test.setRequestHeader("Access-Control-Allow-Origin", "*");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-</head>
+        test.send();
+        test.onreadystatechange = () => {
+            if (test.readyState === XMLHttpRequest.DONE) {
+                const dom = txtToElem(test.response);
+                const projects = dom.querySelectorAll(
+                    `.flex-auto.min-width-0.col-md-2.mr-3 a`
+                );
+                const unorderedList = document.createElement("ul");
 
-<body>
+                for (temp of projects) {
+                    
+                    const aText = temp.textContent;
+                    if (aText === "README.md" || aText === "index.html") {
+                        continue;
+                    } 
+                    const aHref =
+                        "https://emirhan-kartal.github.io/" + temp.textContent;
 
-    <h1>My Projects</h1>
+                    const listItem = document.createElement("li");
 
-    <ul>
+                    const anchor = document.createElement("a");
 
-        <li><a href="https://mhawthor.github.io/responsive-age-calc">Responsive Age Calculator</a></li>
-        <li><a href="https://mhawthor.github.io/responsive-newsletter-register">Responsive Newsletter Sign-up</a></li>
-        <li><a href="https://mhawthor.github.io/responsive-news-website">Responsive News Website</a></li>
-    </ul>
-   
-</body>
-
+                    anchor.href = aHref;
+                    anchor.textContent = aText;
+                    listItem.appendChild(anchor);
+                    unorderedList.appendChild(listItem);
+                }
+                document.body.appendChild(unorderedList)
+            }
+        };
+    </script>
 </html>
