@@ -33,5 +33,4 @@
 
 .container-class {
     @apply flex flex-col h-full;
-
 }

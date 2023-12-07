@@ -1,261 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/output.css" />
+        <script src="js/main.js" defer></script>
+        <script src="js/browse-page.js" defer></script>
+        <script src="js/validation.js" defer></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/output.css">
-    <script src="js/main.js" defer></script>
-    <script src="js/browse-page.js" defer></script>
-    <script src="js/validation.js" defer></script>
-</head>
-
-<body class="h-screen w-screen bg-white lg:bg-gray-300 ">
-    <div class="h-full w-full grid items-center place-items-center"> <!--MAIN CONTAINER-->
-        <div class="h-full w-full lg:h-auto lg:w-[70%] lg:rounded-xl grid
-        lg:grid-rows-[repeat(4,120px)] lg:grid-cols-[1.2fr_repeat(3,1fr)] lg:bg-white"> <!--CONTAINER-->
-            <div class="bg-sidebar-mobile w-full  h-48 absolute z-0 lg:bg-sidebar-desktop bg-cover 
-
-            lg:z-0 lg:row-span-4 lg:col-span-1 lg:w-[200px] lg:h-[480px]"></div>
-            <div id="menu-bar" class="flex absolute z-10 top-8 gap-x-3 place-self-center
-             lg:relative lg:right-[10%] lg:top-24 lg:flex-col lg:gap-y-6">
-
-                <div class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center rounded-full">
-                    <div class="p1 h-9 w-9 border-2 text-white text-bold 
-                     border-solid border-blue-300 
-                     rounded-full flex justify-center items-center selected
-                     lg:h-7 lg:w-7">1
+    <body class="h-screen w-screen bg-white lg:bg-gray-300">
+        <div class="h-full w-full grid items-center place-items-center">
+            <!--MAIN CONTAINER-->
+            <div
+                class="h-full w-full lg:h-auto lg:w-[70%] lg:rounded-xl grid lg:grid-rows-[repeat(4,120px)] lg:grid-cols-[1.2fr_repeat(3,1fr)] lg:bg-white"
+            >
+                <!--CONTAINER-->
+                <div
+                    class="bg-sidebar-mobile w-full h-48 absolute z-0 lg:bg-sidebar-desktop bg-cover lg:z-0 lg:row-span-4 lg:col-span-1 lg:w-[200px] lg:h-[480px]"
+                ></div>
+                <div
+                    id="menu-bar"
+                    class="flex absolute z-10 top-8 gap-x-3 place-self-center lg:relative lg:right-[10%] lg:top-24 lg:flex-col lg:gap-y-6"
+                >
+                    <div
+                        class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center rounded-full"
+                    >
+                        <div
+                            class="p1 h-9 w-9 border-2 text-white text-bold border-solid border-blue-300 rounded-full flex justify-center items-center selected lg:h-7 lg:w-7"
+                        >
+                            1
+                        </div>
+                        <div class="hidden lg:static lg:flex lg:flex-col">
+                            <div
+                                class="hidden lg:block lg:text-gray-300 lg:text-xs"
+                            >
+                                Step 1
+                            </div>
+                            <div
+                                class="hidden lg:block font-bold text-gray-300"
+                            >
+                                YOUR INFO
+                            </div>
+                        </div>
                     </div>
-                    <div class="hidden lg:static lg:flex lg:flex-col">
-                        <div class="hidden lg:block lg:text-gray-300 lg:text-xs">Step 1</div>
-                        <div class="hidden lg:block font-bold text-gray-300">YOUR INFO</div>
+                    <div
+                        class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center"
+                    >
+                        <div
+                            class="p2 h-9 w-9 border-2 text-white text-bold border-solid border-blue-300 rounded-full flex justify-center items-center lg:h-7 lg:w-7"
+                        >
+                            2
+                        </div>
+                        <div class="hidden lg:static lg:flex lg:flex-col">
+                            <div
+                                class="hidden lg:block lg:text-gray-300 lg:text-xs"
+                            >
+                                Step 2
+                            </div>
+                            <div
+                                class="hidden lg:block font-bold text-gray-300"
+                            >
+                                SELECT PLAN
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center"
+                    >
+                        <div
+                            class="p3 h-9 w-9 border-2 text-white text-bold border-solid border-blue-300 rounded-full flex justify-center items-center lg:h-7 lg:w-7"
+                        >
+                            3
+                        </div>
+                        <div class="hidden lg:static lg:flex lg:flex-col">
+                            <div
+                                class="hidden lg:block lg:text-gray-300 lg:text-xs"
+                            >
+                                Step 3
+                            </div>
+                            <div
+                                class="hidden lg:block font-bold text-gray-300"
+                            >
+                                ADD-ONS
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center"
+                    >
+                        <div
+                            class="p4 h-9 w-9 border-2 text-white text-bold border-solid border-blue-300 rounded-full flex justify-center items-center lg:h-7 lg:w-7"
+                        >
+                            4
+                        </div>
+                        <div class="hidden lg:static lg:flex lg:flex-col">
+                            <div
+                                class="hidden lg:block lg:text-gray-300 lg:text-xs"
+                            >
+                                Step 4
+                            </div>
+                            <div
+                                class="hidden lg:block font-bold text-gray-300"
+                            >
+                                SUMMARY
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center">
-                    <div class="p2 h-9 w-9 border-2 text-white text-bold 
-                     border-solid border-blue-300 
-                     rounded-full flex justify-center items-center 
-                     lg:h-7 lg:w-7">2
-                    </div>
-                    <div class="hidden lg:static lg:flex lg:flex-col">
-                        <div class="hidden lg:block lg:text-gray-300 lg:text-xs">Step 2</div>
-                        <div class="hidden lg:block font-bold text-gray-300">SELECT PLAN</div>
-                    </div>
-                </div>
-                <div class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center">
-                    <div class="p3 h-9 w-9 border-2 text-white text-bold 
-                     border-solid border-blue-300 
-                     rounded-full flex justify-center items-center 
-                     lg:h-7 lg:w-7">3
-                    </div>
-                    <div class="hidden lg:static lg:flex lg:flex-col">
-                        <div class="hidden lg:block lg:text-gray-300 lg:text-xs">Step 3</div>
-                        <div class="hidden lg:block font-bold text-gray-300">ADD-ONS</div>
-                    </div>
-                </div>
-                <div class="lg:grid lg:grid-cols-[50px_auto] lg:grid-rows-[30px] lg:items-center">
-                    <div class="p4 h-9 w-9 border-2 text-white text-bold 
-                     border-solid border-blue-300 
-                     rounded-full flex justify-center items-center 
-                     lg:h-7 lg:w-7">4
-                    </div>
-                    <div class="hidden lg:static lg:flex lg:flex-col">
-                        <div class="hidden lg:block lg:text-gray-300 lg:text-xs">Step 4</div>
-                        <div class="hidden lg:block font-bold text-gray-300">SUMMARY</div>
-                    </div>
-                </div>
+                <div
+                    class="w-[95%] min-h-1/2 bg-white rounded-xl z-10 absolute border-2 border-solid border-gray-300 place-self-center top-28 p-6 pb-8 flex justify-center lg:relative lg:col-span-3 lg:row-span-3 lg:border-none lg:h-full lg:top-0"
+                >
+                    <div class="t0">
+                        <div class="text-3xl font-bold tracking-wide">
+                            Personal Info
+                        </div>
+                        <div class="text-gray-400 text-lg">
+                            Please provide your name, email address, and phone
+                            number.
+                        </div>
 
+                        <div class="w-full h-20 flex flex-col justify-center">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="border-2 border-solid border-gray-300 p-3 font-bold rounded-lg outline-none"
+                                placeholder="e.g Stephen King"
+                                required
+                            />
+                        </div>
+                        <div class="w-full h-20 flex flex-col justify-center">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="border-2 border-solid border-gray-300 p-3 font-bold rounded-lg outline-none"
+                                placeholder="e.g. stephenking@lorem.com"
+                                required
+                            />
+                        </div>
+                        <div class="w-full h-20 flex flex-col justify-center">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="text"
+                                name="phone"
+                                id="phone_number"
+                                class="border-2 border-solid border-gray-300 p-3 font-bold rounded-lg outline-none"
+                                placeholder="e.g +1 234 567 890"
+                                required
+                            />
+                        </div>
+                    </div>
 
+                    <div class="hidden t1 flex flex-col gap-4 content-center">
+                        <div class="text-3xl font-bold tracking-wide">
+                            Select your plan
+                        </div>
+                        <div class="text-gray-400 text-lg">
+                            You have the option of monthly or yearly billing.
+                        </div>
+
+                        <div>
+                            <input
+                                type="radio"
+                                name="subscription"
+                                id="arcade"
+                                class="peer absolute opacity-0"
+                            />
+                            <label
+                                for="arcade"
+                                class="grid grid-cols-[70px_1fr] min-h-20 w-full border-solid border-2 border-gray-300 peer-checked:border-black rounded-lg items-center p-4"
+                            >
+                                <div
+                                    class="h-12 w-12 bg-sub-arcade bg-cover"
+                                ></div>
+                                <div>
+                                    <div class="font-bold">Arcade</div>
+                                    <div class="sub-price price-tag-monthly">
+                                        9$/mo
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="radio"
+                                name="subscription"
+                                id="advanced"
+                                class="peer absolute opacity-0"
+                            />
+                            <label
+                                for="advanced"
+                                class="grid grid-cols-[70px_1fr] min-h-20 w-full border-solid border-2 border-gray-300 peer-checked:border-black rounded-lg items-center p-4"
+                            >
+                                <div
+                                    class="h-12 w-12 bg-sub-advanced bg-cover"
+                                ></div>
+                                <div>
+                                    <div class="font-bold">Advanced</div>
+                                    <div class="sub-price price-tag-monthly">
+                                        12$/mo
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div>
+                            <input
+                                type="radio"
+                                name="subscription"
+                                id="pro"
+                                class="peer absolute opacity-0"
+                            />
+                            <label
+                                for="pro"
+                                class="grid grid-cols-[70px_1fr] min-h-20 w-full border-solid border-2 border-gray-300 peer-checked:border-black rounded-lg items-center p-4"
+                            >
+                                <div
+                                    class="h-12 w-12 bg-sub-pro bg-cover"
+                                ></div>
+                                <div>
+                                    <div class="font-bold">Pro</div>
+                                    <div class="sub-price price-tag-monthly">
+                                        15$/mo
+                                    </div>
+                                    <div class="text-dif-blue font-bold hidden">
+                                        2 months free
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div
+                            class="self-center flex items-center justify-center gap-x-2"
+                        >
+                            <input
+                                type="checkbox"
+                                id="m-or-y"
+                                class="peer absolute opacity-0"
+                                onchange="changeSubDuration()"
+                            />
+                            <label
+                                for="m-or-y"
+                                id="selection_checkbox"
+                                class="relative inline-block w-16 h-8 bg-dif-blue rounded-3xl after:absolute after:block after:w-8 after:h-8 after:rounded-full after:bg-white after:transition-all after:linear after:duration-500 after:right-1/2 peer-checked:after:right-px after:order-2 order-2"
+                            ></label>
+
+                            <span
+                                class="font-bold text-dif-blue order-1 peer-checked:text-gray-400"
+                                >Monthly</span
+                            >
+                            <span
+                                class="font-bold text-gray-400 order-3 peer-checked:text-dif-blue"
+                                >Yearly</span
+                            >
+                        </div>
+                    </div>
+                    <div class="hidden t2 flex flex-col gap-4 content-center">
+                        <div class="text-3xl text-dif-blue font-bold">
+                            Pick add-ons
+                        </div>
+                        <div class="text-xl text-gray-400">
+                            Add-ons help enhance your gaming experience.
+                        </div>
+
+                        <div
+                            class="extras grid grid-cols-[60px_1fr_70px] border-solid border-2 border-gray-400 rounded-lg items-center group"
+                        >
+                            <input
+                                type="checkbox"
+                                name="subscription"
+                                id="online-service"
+                                class="h-[1.5rem] bg-red-500 checked:bg-dif-blue first-checked:peer-after:border-black"
+                            />
+                            <div class="flex flex-col">
+                                <div class="font-bold text-dif-blue">
+                                    Online Service
+                                </div>
+                                <div class="text-gray-400 text-sm">
+                                    Access to multiplayer games
+                                </div>
+                            </div>
+                            <div class="text-blue-400">+1$/mo</div>
+                        </div>
+                        <div
+                            class="extras grid grid-cols-[60px_1fr_70px] border-solid border-2 border-gray-400 rounded-lg items-center group"
+                        >
+                            <input
+                                type="checkbox"
+                                name="subscription"
+                                id="larger-storage"
+                                class="h-[1.5rem] bg-red-500 checked:bg-dif-blue first-checked:peer-after:border-black"
+                            />
+                            <div class="flex flex-col">
+                                <div class="font-bold text-dif-blue">
+                                    Larger storage
+                                </div>
+                                <div class="text-gray-400 text-sm">
+                                    Extra 1TB of cloud save
+                                </div>
+                            </div>
+                            <div class="text-blue-400">+1$/mo</div>
+                        </div>
+
+                        <div
+                            class="extras grid grid-cols-[60px_1fr_70px] border-solid border-2 border-gray-400 rounded-lg items-center group"
+                        >
+                            <input
+                                type="checkbox"
+                                name="subscription"
+                                id="customizable-profile"
+                                class="h-[1.5rem] bg-red-500 checked:bg-dif-blue first-checked:peer-after:border-black"
+                            />
+                            <div class="flex flex-col">
+                                <div class="font-bold text-dif-blue">
+                                    Customizable profile
+                                </div>
+                                <div class="text-gray-400 text-sm">
+                                    Custom theme on your profile
+                                </div>
+                            </div>
+                            <div class="text-blue-400">+1$/mo</div>
+                        </div>
+                    </div>
+                    <div class="t3 hidden">
+                        <div class="text-3xl font-bold tracking-wide m-1 mt-0">
+                            Finishing up
+                        </div>
+                        <div class="text-gray-400 text-xl m-1">
+                            Double check everything is OK before confirming.
+                        </div>
+
+                        <div
+                            class="bg-[#F8F9FE] grid grid-rows-[4fr_6fr] p-4 pb-0 rounded-lg min-h-14"
+                        >
+                            <div
+                                class="first-section grid grid-cols-2 grid-rows-2 grid-flow-col"
+                            >
+                                <div
+                                    id="sub-plan"
+                                    class="text-dif-blue font-bold"
+                                >
+                                    Arcade (<span id="duration">Monthly</span>)
+                                </div>
+                                <div class="text-gray-400 underline">
+                                    Change
+                                </div>
+
+                                <div
+                                    id="sub-plan-price"
+                                    class="row-start-2 row-end-3 col-start-2 col-end-3 justify-self-end font-bold text-dif-blue"
+                                >
+                                    9$/mo
+                                </div>
+                            </div>
+                            <div
+                                id="extra-services"
+                                class="grid grid-cols-1 grid-rows-3 grid-flow-row mt-2 gap-y-2"
+                            ></div>
+                        </div>
+                        <div class="grid grid-cols-2 p-4 pb-0">
+                            <div class="text-gray-400">Total (per year)</div>
+                            <div
+                                id="total-pay"
+                                class="justify-self-end text-dif-blue font-extrabold"
+                            >
+                                12$/y
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t4 hidden flex items-center flex-col gap-y-2 pt-8 lg:justify-center">
+                        <div class="bg-icon-thanks h-20 w-20 bg-cover"></div>
+                        <h1 class="text-2xl font-bold m-0">Thank You!</h1>
+                        <p class="p-2 pb-12 pt-0 text-center text-gray-400 m-0 text-sm sm:p-4 md:p-6" >
+                            Thanks for confirming your subscription! We hope you
+                            have fun using our platform.If you ever need
+                            support, please feel free to emai us at
+                            support@loremgaming.com
+                        </p>
+                    </div>
+   
+                </div>
+                <button
+                    id="go-back"
+                    class="hidden self-start top-[93%] h-12 w-28 rounded-xl text-gray-400 absolute font-bold tracking-widest ml-[2.5%] place-self-start lg:self-end mb-2 lg:top-0 lg:mr-0 lg:mb-2 lg:relative lg:row-start-4 lg:row-end-5 lg:col-start-2 lg:col-end-3"
+                    onclick="previousPage()"
+                >
+                    Go back
+                </button>
+
+                <button
+                    id="next-step"
+                    class="bg-dif-blue self-end top-[92%] h-12 w-28 rounded-xl text-white absolute font-bold mr-[3%] place-self-end lg:top-0 lg:mr-0 lg:mb-2 lg:relative lg:row-start-4 lg:row-end-5 lg:col-start-4 lg:col-end-5"
+                    onclick="nextPage(validateForm())"
+                >
+                    Next Step
+                </button>
             </div>
-            <div class=" w-[95%] min-h-1/2 bg-white rounded-xl z-10 absolute border-2 border-solid border-gray-300
-                place-self-center top-28 p-6 pb-8 flex justify-center lg:relative
-                lg:col-span-3 lg:row-span-3 lg:border-none
-                 lg:h-full lg:top-0">
-
-                <div class="t0">
-                    <div class="text-3xl font-bold tracking-wide">Personal Info</div>
-                    <div class="text-gray-400 text-lg">Please provide your name, email address, and phone number.</div>
-
-                    <div class="w-full h-20 flex flex-col justify-center">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="
-                    border-2 border-solid border-gray-300 p-3 font-bold
-                    rounded-lg outline-none
-                    " placeholder="e.g Stephen King" required>
-                    </div>
-                    <div class="w-full h-20 flex flex-col justify-center">
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email" class="
-                    border-2 border-solid border-gray-300 p-3 font-bold
-                    rounded-lg outline-none
-                    " placeholder="e.g. stephenking@lorem.com" required>
-                    </div>
-                    <div class="w-full h-20 flex flex-col justify-center">
-                        <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone_number" class="
-                    border-2 border-solid border-gray-300 p-3 font-bold
-                    rounded-lg outline-none
-                    " placeholder="e.g +1 234 567 890" required>
-                    </div>
-                </div>
-
-                <div class="hidden t1 flex flex-col gap-4 content-center">
-                    <div class="text-3xl font-bold tracking-wide">Select your plan</div>
-                    <div class="text-gray-400 text-lg">You have the option of monthly or yearly billing.</div>
-
-                    <div>
-                        <input type="radio" name="subscription" id="arcade" class="peer absolute opacity-0">
-                        <label for="arcade" class="grid grid-cols-[70px_1fr] min-h-20 w-full
-                border-solid border-2 border-gray-300 peer-checked:border-black
-                rounded-lg items-center p-4">
-                            <div class="h-12 w-12 bg-sub-arcade bg-cover"></div>
-                            <div>
-                                <div class="font-bold">Arcade</div>
-                                <div class="sub-price price-tag-monthly">9$/mo</div>
-                            </div>
-                        </label>
-                    </div>
-
-
-                    <div>
-                        <input type="radio" name="subscription" id="advanced" class="peer absolute opacity-0">
-                        <label for="advanced" class="grid grid-cols-[70px_1fr] min-h-20 w-full
-                    border-solid border-2 border-gray-300 peer-checked:border-black
-                    rounded-lg items-center p-4">
-                            <div class="h-12 w-12 bg-sub-advanced bg-cover"></div>
-                            <div>
-                                <div class="font-bold">Advanced</div>
-                                <div class="sub-price price-tag-monthly">12$/mo</div>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="subscription" id="pro" class="peer absolute opacity-0">
-                        <label for="pro" class="grid grid-cols-[70px_1fr] min-h-20 w-full
-                    border-solid border-2 border-gray-300 peer-checked:border-black
-                    rounded-lg items-center p-4">
-                            <div class="h-12 w-12 bg-sub-pro bg-cover"></div>
-                            <div>
-                                <div class="font-bold">Pro</div>
-                                <div class="sub-price price-tag-monthly">15$/mo</div>
-                                <div class="text-dif-blue font-bold hidden">2 months free</div>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div class="self-center flex items-center justify-center gap-x-2">
-
-
-                        <input type="checkbox" id="m-or-y"
-                         class="peer absolute opacity-0"
-                         onchange="changeSubDuration()">
-                        <label for="m-or-y" id="selection_checkbox" class="relative inline-block w-16 h-8
-                         bg-dif-blue rounded-3xl
-                    after:absolute after:block after:w-8 after:h-8 
-                    after:rounded-full after:bg-white
-                    after:transition-all after:linear after:duration-500
-                    after:right-1/2
-                    peer-checked:after:right-px after:order-2 order-2"></label>
-
-                        <span class="font-bold text-dif-blue order-1 peer-checked:text-gray-400">Monthly</span>
-                        <span class="font-bold text-gray-400 order-3 peer-checked:text-dif-blue">Yearly</span>
-                    </div>
-
-
-                </div>
-                <div class="hidden t2 flex flex-col gap-4 content-center">
-                    <div class="text-3xl text-dif-blue font-bold">Pick add-ons</div>
-                    <div class="text-xl text-gray-400">Add-ons help enhance your gaming experience.</div>
-
-
-
-                    <div class="extras grid grid-cols-[60px_1fr_70px]
-                    border-solid border-2 border-gray-400 rounded-lg
-                     items-center group">
-                        <input type="checkbox" name="subscription" id="online-service" class="h-[1.5rem]
-                        bg-red-500 checked:bg-dif-blue first-checked:peer-after:border-black">
-                        <div class="flex flex-col">
-                            <div class="font-bold text-dif-blue">Online Service</div>
-                            <div class="text-gray-400 text-sm">Access to multiplayer games</div>
-                        </div>
-                        <div class="text-blue-400">+1$/mo</div>
-                    </div>
-                    <div class="extras grid grid-cols-[60px_1fr_70px]
-                border-solid border-2 border-gray-400 rounded-lg
-                 items-center group">
-                        <input type="checkbox" name="subscription" id="larger-storage" class="h-[1.5rem]
-                    bg-red-500 checked:bg-dif-blue first-checked:peer-after:border-black">
-                        <div class="flex flex-col">
-                            <div class="font-bold text-dif-blue">Larger storage</div>
-                            <div class="text-gray-400 text-sm">Extra 1TB of cloud save</div>
-                        </div>
-                        <div class="text-blue-400">+1$/mo</div>
-                    </div>
-
-                    <div class="extras grid grid-cols-[60px_1fr_70px]
-            border-solid border-2 border-gray-400 rounded-lg
-             items-center group">
-                        <input type="checkbox" name="subscription" id="customizable-profile" class="h-[1.5rem]
-                bg-red-500 checked:bg-dif-blue first-checked:peer-after:border-black">
-                        <div class="flex flex-col">
-                            <div class="font-bold text-dif-blue">Customizable profile</div>
-                            <div class="text-gray-400 text-sm">Custom theme on your profile</div>
-                        </div>
-                        <div class="text-blue-400">+1$/mo</div>
-                    </div>
-
-
-
-                </div>
-                <div class="t3 hidden">
-                    <div class="text-3xl font-bold tracking-wide m-1 mt-0">Finishing up</div>
-                    <div class="text-gray-400 text-xl m-1">Double check everything is OK before confirming.</div>
-
-                    <div class="bg-[#F8F9FE] grid grid-rows-[4fr_6fr] p-4 pb-0 rounded-lg min-h-14">
-                        <div class="first-section grid grid-cols-2 grid-rows-2 grid-flow-col">
-                            <div id="sub-plan" class="text-dif-blue font-bold">Arcade (<span
-                                    id="duration">Monthly</span>)
-                            </div>
-                            <div class="text-gray-400 underline">Change</div>
-
-                            <div id="sub-plan-price" class="row-start-2 row-end-3 col-start-2 col-end-3 justify-self-end
-                    font-bold text-dif-blue
-                    ">9$/mo</div>
-                        </div>
-                        <div id="extra-services" class="grid grid-cols-1 grid-rows-3 grid-flow-row mt-2 gap-y-2">
-                            
-
-
-
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 p-4 pb-0">
-                        <div class="text-gray-400">Total (per year)</div>
-                        <div id="total-pay" class="justify-self-end text-dif-blue font-extrabold">12$/y</div>
-
-                    </div>
-                </div>
-
-
-            </div>
-            <button id="go-back" class="hidden self-start top-[93%] h-12 w-28
-        rounded-xl text-gray-400 absolute font-bold tracking-widest ml-[2.5%]
-        place-self-start lg:self-end mb-2
-        lg:top-0 lg:mr-0 lg:mb-2 lg:relative lg:row-start-4 lg:row-end-5
-        lg:col-start-2 lg:col-end-3" onclick="previousPage()">Go
-                back</button>
-
-            <button id="next-step" class="bg-dif-blue self-end top-[92%] h-12 w-28
-        rounded-xl text-white absolute font-bold mr-[3%]
-        place-self-end  lg:top-0 lg:mr-0 lg:mb-2 lg:relative lg:row-start-4 lg:row-end-5
-        lg:col-start-4 lg:col-end-5
-        " onclick="nextPage(validateForm())">Next Step</button>
         </div>
-
-    </div>
-
-</body>
-
+    </body>
 </html>

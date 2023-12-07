@@ -72,6 +72,10 @@ function getDatas(order) {
         });
         finalPage();
     }
+    if (order === 3) {
+        next_step_button.classList.add("hidden");
+        go_back_button.classList.add("hidden");
+    }
 }
 
 function finalPage() {
