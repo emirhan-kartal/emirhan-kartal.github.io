@@ -860,15 +860,15 @@ video {
 }
 
 .bg-sub-advanced {
-  background-image: url('multi-step-form/assets/imagesicon-advanced.svg');
+  background-image: url('/multi-step-form/assets/images/icon-advanced.svg');
 }
 
 .bg-sub-arcade {
-  background-image: url('multi-step-form/assets/images/icon-arcade.svg');
+  background-image: url('/multi-step-form/assets/images/icon-arcade.svg');
 }
 
 .bg-sub-pro {
-  background-image: url('multi-step-form/assets/images/icon-pro.svg');
+  background-image: url('/multi-step-form/assets/images/icon-pro.svg');
 }
 
 .bg-cover {
