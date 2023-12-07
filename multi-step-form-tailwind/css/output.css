@@ -864,23 +864,23 @@ video {
 }
 
 .bg-icon-thanks {
-  background-image: url('assets/images/icon-thank-you.svg');
+  background-image: url('/multi-step-form-tailwind/assets/images/icon-thank-you.svg');
 }
 
 .bg-sidebar-mobile {
-  background-image: url('assets/images/bg-sidebar-mobile.svg');
+  background-image: url('/multi-step-form-tailwind/assets/images/bg-sidebar-mobile.svg');
 }
 
 .bg-sub-advanced {
-  background-image: url('assets/images/icon-advanced.svg');
+  background-image: url('/multi-step-form-tailwind/assets/images/icon-advanced.svg');
 }
 
 .bg-sub-arcade {
-  background-image: url('assets/images/icon-arcade.svg');
+  background-image: url('/multi-step-form-tailwind/assets/images/icon-arcade.svg');
 }
 
 .bg-sub-pro {
-  background-image: url('assets/images/icon-pro.svg');
+  background-image: url('/multi-step-form-tailwind/assets/images/icon-pro.svg');
 }
 
 .bg-cover {
@@ -1311,7 +1311,7 @@ video {
   }
 
   .lg\:bg-sidebar-desktop {
-    background-image: url("/assets/images/bg-sidebar-desktop.svg");
+    background-image: url("/multi-step-form-tailwind/assets/images/bg-sidebar-desktop.svg");
   }
 
   .lg\:text-xs {
