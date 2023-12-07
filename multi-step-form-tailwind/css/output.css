@@ -610,8 +610,8 @@ video {
   margin-left: 2.5%;
 }
 
-.mr-\[20\%\] {
-  margin-right: 20%;
+.mr-\[3\%\] {
+  margin-right: 3%;
 }
 
 .mt-0 {
@@ -620,10 +620,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mr-\[3\%\] {
-  margin-right: 3%;
 }
 
 .inline-block {
@@ -868,23 +864,23 @@ video {
 }
 
 .bg-icon-thanks {
-  background-image: url('/multi-step-form/assets/images/icon-thank-you.svg');
+  background-image: url('assets/images/icon-thank-you.svg');
 }
 
 .bg-sidebar-mobile {
-  background-image: url('/multi-step-form/assets/images/bg-sidebar-mobile.svg');
+  background-image: url('assets/images/bg-sidebar-mobile.svg');
 }
 
 .bg-sub-advanced {
-  background-image: url('/multi-step-form/assets/images/icon-advanced.svg');
+  background-image: url('assets/images/icon-advanced.svg');
 }
 
 .bg-sub-arcade {
-  background-image: url('/multi-step-form/assets/images/icon-arcade.svg');
+  background-image: url('assets/images/icon-arcade.svg');
 }
 
 .bg-sub-pro {
-  background-image: url('/multi-step-form/assets/images/icon-pro.svg');
+  background-image: url('assets/images/icon-pro.svg');
 }
 
 .bg-cover {
@@ -1216,14 +1212,6 @@ video {
     margin-right: 0px;
   }
 
-  .lg\:mr-\[15\%\] {
-    margin-right: 15%;
-  }
-
-  .lg\:mr-\[40\%\] {
-    margin-right: 40%;
-  }
-
   .lg\:mr-\[50\%\] {
     margin-right: 50%;
   }
@@ -1260,8 +1248,8 @@ video {
     width: 1.75rem;
   }
 
-  .lg\:w-\[200px\] {
-    width: 200px;
+  .lg\:w-\[250px\] {
+    width: 250px;
   }
 
   .lg\:w-\[70\%\] {
@@ -1323,7 +1311,7 @@ video {
   }
 
   .lg\:bg-sidebar-desktop {
-    background-image: url("/multi-step-form/assets/images/bg-sidebar-desktop.svg");
+    background-image: url("/assets/images/bg-sidebar-desktop.svg");
   }
 
   .lg\:text-xs {
